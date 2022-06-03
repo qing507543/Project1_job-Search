@@ -14,6 +14,8 @@ The completed application should meet the following criteria:
 
 [Indeed API documentation](https://rapidapi.com/indeed/api/indeed)
 
+[Monster API documentation](https://rapidapi.com/jaypat87/api/monster1)
+
 ### The Homepage
 
 The homepage (`index.html`) should have the following:
@@ -43,3 +45,6 @@ The search results page (`search-results.html`) should have and do the following
 ## Assets
 
 The following image demonstrates the homepage's appearance and functionality:
+
+
+![](Assests/Images/Screen%20Shot%202022-06-02%20at%208.54.56%20PM%20(2).png)
