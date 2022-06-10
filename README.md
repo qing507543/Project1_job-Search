@@ -12,9 +12,9 @@ The completed application should meet the following criteria:
 * As a user, I can sort the results as date posted, salary, job title, location, education level, parttime/fulltime
 
 
-[Indeed API documentation](https://rapidapi.com/indeed/api/indeed)
+[Remotive Job API documentation](https://github.com/remotive-com/remote-jobs-api)
 
-[Monster API documentation](https://rapidapi.com/jaypat87/api/monster1)
+[Free Job Search API documentation](https://www.arbeitnow.com/api/job-board-api)
 
 ### The Homepage
 
