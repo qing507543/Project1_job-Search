@@ -1,0 +1,180 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+ body {
+    color: #333;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+
+
+/*
+ * -- HELPER STYLES --
+ * Over-riding some of the .pure-button styles to make my buttons look unique
+ */
+.primary-button,
+.secondary-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 20px;
+}
+.primary-button {
+    color: #fff;
+    background: #1b98f8;
+    margin: 1em 0;
+}
+.secondary-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.5em 2em;
+    font-size: 80%;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * This layout consists of three main elements,  `#list` (email list), and `#main` (email content). All 3 elements are within `#layout`
+ */
+#layout, #list, #main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+/*
+
+/* Job Item Styles */
+.job-item {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #ddd;
+    border-left: 6px solid transparent;
+}
+
+    .job-name,
+    .job-subject {
+        margin: 0;
+        font-size: medium;
+    }
+    .job-name {
+        text-transform: uppercase;
+        color: black;
+        font-size: x-large;
+    }
+    .job-location{
+        font-size: small;
+    }
+    .job-desc {
+        font-size: 80%;
+        margin: 0.4em 0;
+    }
+
+.job-item-selected {
+    background: #eee;
+}
+.job-item-unread {
+    border-left: 6px solid #1b98f8;
+}
+
+/* job Content Styles */
+.job-content-header, .job-content-body, .job-content-footer {
+    padding: 1em 2em;
+}
+    .job-content-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .job-content-title {
+            margin: 0.5em 0 0;
+        }
+        .job-content-company {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+        .job-content-location {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+        .job-content-salary {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+    .job-content-controls {
+        margin-top: 2em;
+        text-align: right;
+    }
+        .job-content-controls .secondary-button {
+            margin-bottom: 0.3em;
+        }
+
+       
+
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 40em) {
+
+    /* Move the layout over so we can fit the nav + list in on the left */
+    #layout {
+        padding-left:500px; /* "left col (nav + list)" width */
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* These are position:fixed; elements that will be in the left 500px of the screen */
+
+
+    #list {
+        margin-left: -350px;
+        width: 100%;
+        height: 33%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #main {
+        position: fixed;
+        top: 33%;
+        right: 0;
+        bottom: 0;
+        left: 150px;
+        overflow: auto;
+        width: auto; /* so that it's not 100% */
+    }
+
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 60em) {
+
+    /* This will take up the entire height, and be a little thinner */
+    #list {
+        margin-left: -350px;
+        width:350px;
+        height: 100%;
+        border-right: 1px solid #ddd;
+    }
+
+    /* This will now take up it's own column, so don't need position: fixed; */
+    #main {
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+}
