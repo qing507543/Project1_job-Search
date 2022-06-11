@@ -42,11 +42,24 @@ a {
  * -- LAYOUT STYLES --
  * This layout consists of three main elements,  `#list` (email list), and `#main` (email content). All 3 elements are within `#layout`
  */
-#layout, #list, #main {
+#layout, #main {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
+}
+
+#list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+}
+
+#main {
+    margin: 0;
+    padding: 0;
+
 }
 /*
 
@@ -67,10 +80,15 @@ a {
         color: black;
         font-size: x-large;
     }
-    .job-location{
+    .job-type{
         font-size: small;
     }
-    .job-desc {
+    .job-tag {
+        font-size: 80%;
+        margin: 0.4em 0;
+    }
+
+    .job-postdate {
         font-size: 80%;
         margin: 0.4em 0;
     }
@@ -98,7 +116,7 @@ a {
             margin: 0;
             font-weight: normal;
         }
-        .job-content-location {
+        .job-content-type {
             font-size: 1em;
             margin: 0;
             font-weight: normal;
@@ -131,14 +149,14 @@ a {
         padding-left:500px; /* "left col (nav + list)" width */
         position: relative;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction:column-reverse;
     }
 
     /* These are position:fixed; elements that will be in the left 500px of the screen */
 
 
     #list {
-        margin-left: -350px;
+        margin-left: 0px;
         width: 100%;
         height: 33%;
         border-bottom: 1px solid #ddd;
