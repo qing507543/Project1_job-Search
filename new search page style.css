@@ -1,0 +1,51 @@
+
+/* background color for webpage and menu bar font color */
+body {
+    color: #666;
+    background-color: black;
+}
+
+/* search bar padding inside grey text box */
+.l-box {
+    padding: 4em;
+}
+
+
+/*padding for menu bar at the top of the page*/
+.pure-menu-link {
+    padding: 4em .7em;
+}
+
+
+
+/* grey text box elements */
+.text-box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    width: 1515px;
+    text-align: center, left;
+    background: rgb(49, 49, 49); /* bluish grey */
+    color: rgb(231, 95, 27); /* steel blue */
+}
+
+/* photo box elements */
+.photo-box, .photo-box img {
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+    width: 500px;
+    text-align: center;
+    padding-top: .5em;
+    padding-left: .2em;
+    padding-bottom: .5em;
+    max-width: 100%;
+    height: auto;
+    min-height: 250px;
+}
+
+
+
+   
+
+
