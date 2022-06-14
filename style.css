@@ -1,0 +1,87 @@
+
+.form-class{
+    text-align: center;
+}
+
+body {
+    color: #666;
+    background-color: black;
+}
+
+.l-box {
+    padding: 2em;
+    padding-left:40em ;
+    padding-top: 10em;
+    justify-content: center;
+}
+
+.header .pure-menu {
+    border-bottom-color: black;
+    border-radius: 0;
+    padding-bottom: 9em;
+}
+
+.pure-menu-link {
+    padding: 2em .7em;
+}
+    .photo-box img {
+        max-width: 100%;
+        height: auto;
+        min-height: 250px;
+    }
+
+.text-box {
+    background: rgb(49, 49, 49); /* bluish grey */
+    color: rgb(255, 190, 94); /* steel blue */
+    
+}
+
+
+    .text-box-head {
+        color: rgb(255, 190, 94);
+        padding-bottom: ;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 24px;
+        padding-left: 1em;
+    }
+
+    .text-box-subhead {
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+.form-box {
+    text-align: center;
+    font-size: 120%;
+    border-bottom: 1px solid #eee;
+    padding-left: 20em;
+}
+
+
+    .form-box .pure-button {
+        background-color: #61B842;
+        color: white;
+        vertical-align: top;
+        font-size: 85%;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-radius: 4px;
+        margin: 0.3em;
+    }
+    .pure-form input[type] {
+        margin: 0.3em auto;
+        text-align: center;
+    }
+
+
+
+@media (min-width: 30em) {
+    .photo-box, .text-box {
+        text-align: left;
+    }
+
+    
