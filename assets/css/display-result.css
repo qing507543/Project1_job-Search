@@ -42,11 +42,9 @@ a {
  * -- LAYOUT STYLES --
  * This layout consists of three main elements,  `#list` (email list), and `#main` (email content). All 3 elements are within `#layout`
  */
-#layout, #main {
+#layout {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column-reverse;
 }
 
 #list {
@@ -54,12 +52,16 @@ a {
     padding: 0;
     display: flex;
     flex-direction:column;
+    position: absolute;
+    left:400px;
+    top:100px
 }
 
 #main {
     margin: 0;
     padding: 0;
-
+    position: absolute;
+    top: 300px;
 }
 /*
 
@@ -148,8 +150,6 @@ a {
     #layout {
         padding-left:500px; /* "left col (nav + list)" width */
         position: relative;
-        display: flex;
-        flex-direction:column-reverse;
     }
 
     /* These are position:fixed; elements that will be in the left 500px of the screen */
