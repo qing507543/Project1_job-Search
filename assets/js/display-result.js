@@ -4,9 +4,7 @@ var jobcontentall = document.querySelector('#main');
 
 
 //https://remotive.com/api/remote-jobs?search=front%20end
-//var searchinput = localStorage.getItem(searchinput);
-var searchinput = 'python developer';
-
+var searchinput = localStorage.getItem("searchinputval");
 var query = searchinput.split(" ");
 var queryparameter = query[0];
 
@@ -102,3 +100,10 @@ joblist.addEventListener("click", function (event) {
 
     });
 
+
+var returnbtn = document.querySelector('#returnbtn');
+
+returnbtn.addEventListener("click", function(event){
+    location.assign("./new search page.html");
+    
+})
