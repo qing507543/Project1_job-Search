@@ -104,6 +104,6 @@ joblist.addEventListener("click", function (event) {
 var returnbtn = document.querySelector('#returnbtn');
 
 returnbtn.addEventListener("click", function(event){
-    location.assign("./new search page.html");
+    location.assign("./index.html");
     
 })
